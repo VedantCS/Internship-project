@@ -8,7 +8,7 @@ public class DatabaseUtil {
     private static final String PASSWORD = "ved@sqltext@2003";  
     private static Connection conn;
 //Just a silly note- You can create a variable of an interface type, but you cannot create an object of an interface.
-In JDBC, the actual object is created by the JDBC driver, and it implements the Connection interface.
+//In JDBC, the actual object is created by the JDBC driver, and it implements the Connection interface.
     public static Connection getConnection() throws SQLException {
         if (conn == null || conn.isClosed()) {
             try {
@@ -51,4 +51,5 @@ In JDBC, the actual object is created by the JDBC driver, and it implements the 
         }
     }
 }
+
 
